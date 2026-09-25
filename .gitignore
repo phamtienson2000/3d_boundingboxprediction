@@ -1,0 +1,13 @@
+outputs/
+*.pt
+*.onnx
+data/dl_challenge/
+data/fps_cache/
+.claude/
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+dist/
+build/
+.pytest_cache/

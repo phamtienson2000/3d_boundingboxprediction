@@ -1,0 +1,59 @@
+data:
+  root: "data/dl_challenge"
+  cache_dir: "outputs/cache"
+  split_json: "outputs/cache/split.json"
+  train_ratio: 0.80
+  val_ratio: 0.10
+  test_ratio: 0.10
+  seed: 42
+
+preprocess:
+  min_points: 30
+  outlier_z_mad_factor: 3.0
+  outlier_z_min_cm: 2.0
+  outlier_knn_k: 16
+  outlier_knn_sigma: 2.0
+  use_outlier_filter: true
+  dbscan_eps: 0.01
+  dbscan_offset_thresh: 0.10
+  dbscan_min_samples: 5
+
+dataset:
+  num_points: 512
+  use_rgb: false
+  use_pca: true
+
+augmentation:
+  rot_z_deg: 360.0
+  tilt_deg: 10.0
+  scale_min: 0.9
+  scale_max: 1.1
+  jitter_sigma_m: 0.002
+  jitter_clip_m: 0.005
+  dropout_max: 0.20
+  rgb_jitter: 0.2
+
+model:
+  mlp_channels: [64, 128, 256, 512]
+  head_channels: [512, 256]
+  dropout: 0.3
+
+loss:
+  corner_weight: 1.0
+  center_weight: 1.0
+  size_weight: 0.5
+  smooth_l1_beta: 0.002
+
+train:
+  epochs: 20
+  batch_size: 32
+  lr: 1.0e-3
+  weight_decay: 1.0e-4
+  grad_clip: 1.0
+  warmup_epochs: 5
+  early_stop_patience: 999
+  val_iou_every: 5
+  seed: 42
+
+reports_dir: "reports"
+outputs_dir: "outputs"

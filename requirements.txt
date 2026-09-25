@@ -1,0 +1,12 @@
+numpy
+scipy
+matplotlib
+plotly
+pillow
+pyyaml
+tqdm
+tensorboard
+onnx
+onnxruntime
+onnxconverter-common
+pytest
