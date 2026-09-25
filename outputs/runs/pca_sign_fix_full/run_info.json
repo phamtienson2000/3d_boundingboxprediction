@@ -1,0 +1,7 @@
+{
+  "run_name": "pca_sign_fix_full",
+  "start_time": "2026-09-24T13:49:30.079093",
+  "git_hash": "c495f266",
+  "config": "configs/pca_sign_fix_full.yaml",
+  "n_threads": 8
+}

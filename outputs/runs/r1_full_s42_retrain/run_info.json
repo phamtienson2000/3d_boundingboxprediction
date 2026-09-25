@@ -1,0 +1,7 @@
+{
+  "run_name": "r1_full_s42_retrain",
+  "start_time": "2026-09-25T10:24:34.676464",
+  "git_hash": "d6aa48fd",
+  "config": "../configs/r1_full.yaml",
+  "n_threads": 8
+}

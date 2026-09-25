@@ -1,6 +1,4 @@
-outputs/
-*.pt
-*.onnx
+outputs/cache/
 data/dl_challenge/
 data/fps_cache/
 .claude/
