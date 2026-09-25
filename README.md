@@ -92,6 +92,19 @@ L = 1.0·L_corner + 1.0·L_center + 0.5·L_size
 
 ## 4. Quick start
 
+> **Data not included.** The dataset is not tracked in this repository.
+> Place the provided `dl_challenge` folder inside `data/` so the layout is:
+> ```
+> data/
+> └── dl_challenge/
+>     ├── <scene-uuid>/
+>     │   ├── rgb.jpg
+>     │   ├── pc.npy
+>     │   └── mask.npy
+>     └── ...
+> ```
+> The config (`configs/r1_full.yaml`) expects `data/dl_challenge` relative to the project root.
+
 ```bash
 # 1. Create venv and install dependencies
 python -m venv .venv
